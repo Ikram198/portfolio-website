@@ -1,0 +1,39 @@
+body{
+    background-color: #212121;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+}
+#main_image{
+    height: 500px;
+    width: 450px;
+}
+#name{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.box {
+
+    display: inline-block;
+    margin-left: 200px;
+    align-items: first baseline;
+}
+#box1{
+    display: flex;
+    justify-content: space-between;
+}
+#ribbon{
+
+}
+#list{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    
+}
+#ribbon a {
+    color: #d1bd05;
+    text-decoration: none; 
+    margin-right: 50px;
+}
