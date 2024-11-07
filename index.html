@@ -8,18 +8,24 @@
 </head>
 <body>
     <div id="ribbon">
-        <ul id="list">
-        <li class="ribbon-list"><a href="">home</a></li>
-        <li class="ribbon-list"><a href="">projects</a></li>
+        <ul id="list" class="nav-links">
+        <!-- <li class="ribbon-list"><a href="">home</a></li> -->
+        <!-- <li class="ribbon-list"><a href="">projects</a></li> -->
         <!-- this is marow bon of my website so i have make it as strong as possible  -->
-        <li class="ribbon-list"><a href="">work experience</a></li>
+        <!-- <li class="ribbon-list"><a href="">work experience</a></li> -->
         <!-- here i will add my udc - india experience  -->
-        <li class="ribbon-list"><a href="">contacts</a></li>
+        <!-- <li class="ribbon-list"><a href="">contacts</a></li> -->
         <!-- in contact section i add my contacts with a chat bot to resolve peoples small queries  -->
-        <li class="ribbon-list"><a href="">teachings/learning</a></li>
+        <!-- <li class="ribbon-list"><a href="">teachings/learning</a></li> -->
         <!-- in teching section i add my learning like full deatails about how a api work i also add my small learnigs there like how i learn docker also i add some functionality in this section 
          i will make some info black & white and faded that info i want to show on this page but i want the people who come there will not fucus on it  -->
-        </ul>
+        <!-- </ul> -->
+        <!-- <ul class="nav-links"> -->
+        <li class="ribbon-list"><a href="">home</a></li>
+        <li class="ribbon-list"><a href="about.html">About</a></li>
+        <li class="ribbon-list"><a href="projects.html">Projects</a></li>
+        <li class="ribbon-list"><a href="work-experience.html" class="active">Work Experience</a></li>
+        <li class="ribbon-list"><a href="contact.html">Contact</a></li>
     </div>
     <div id="box1">
     <div class="box">
@@ -31,6 +37,72 @@
         <img id="main_image" src="images/WhatsApp Image 2024-10-27 at 7.39.55 AM.jpeg" alt="">
     </div>
     </div>
+
+    <div id="box1">
+        <div class="box">
+            <h1 id="name">About Me</h1>
+            <p class="about-text">Hello! I'm Ikram Malik, a passionate software developer and tech enthusiast. With a strong background in JavaScript, Python, and C++, I love building dynamic web applications and exploring new technologies. My journey in tech has been a continuous learning experience, and I'm always eager to take on new challenges.</p>
+            <p class="about-text">Beyond coding, I enjoy sharing my knowledge with others, whether it's through blog posts, tutorials, or engaging with the tech community. I believe in the power of technology to transform lives and am committed to using my skills to make a meaningful impact.</p>
+            <p class="about-text">When I'm not coding, you'll find me experimenting with new programming libraries, diving into open-source projects, or learning about emerging trends in software development.</p>
+        </div>
+        <div class="box">
+            <img id="main_image" src="images/about-me.jpg" alt="About Me Image">
+        </div>
+    </div>
+
+    <div id="box1">
+        <div class="box">
+            <h1 id="name">Work Experience</h1>
+            <div class="work-experience">
+                <div class="experience-item">
+                    <h2>Software Engineer Intern</h2>
+                    <p class="company">ABC Tech Solutions</p>
+                    <p class="duration">June 2023 - August 2023</p>
+                    <p class="description">Worked on developing web-based solutions, improved system performance, and collaborated with the design team to enhance user experience.</p>
+                </div>
+                <div class="experience-item">
+                    <h2>Junior Web Developer</h2>
+                    <p class="company">XYZ Digital</p>
+                    <p class="duration">January 2022 - May 2023</p>
+                    <p class="description">Built responsive websites, optimized code for efficiency, and assisted in database management.</p>
+                </div>
+                <!-- Add more experience items as needed -->
+            </div>
+        </div>
+        <div class="box">
+            <img id="main_image" src="images/work-experience.jpg" alt="Work Experience Image">
+        </div>
+    </div>
+
+    <div id="box1">
+        <div class="box">
+            <h1 id="name">Get in Touch</h1>
+            <p class="contact-text">I'd love to hear from you! Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out.</p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email-input" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message-input" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        <div class="box">
+            <img id="main_image" src="images/contact.jpg" alt="Contact Image">
+        </div>
+    </div>
+
+
+
+
     <Script src="Script.js"></Script>
 </body>
 </html>

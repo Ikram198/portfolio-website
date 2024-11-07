@@ -1,39 +1,208 @@
-body{
-    background-color: #212121;
-    color: #fff;
-    margin: 0px;
-    padding: 0px;
+/* Global Styles */
+body {
+    background-color: #212121; /* Dark background */
+    color: #f0f0f0; /* Light text color for readability */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
-#main_image{
+
+/* Image Styling */
+#main_image {
     height: 500px;
     width: 450px;
+    border-radius: 10px;
+    object-fit: cover;
 }
-#name{
-    margin-top: 50px;
-    margin-bottom: 100px;
+
+/* Header and Navigation */
+#ribbon {
+    position:fixed;
+    width: 100%;
+    background-color: #333; /* Dark gray for the header */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+.ribbon-list {
+    margin-right: 50px;
+}
+
+#ribbon a {
+    color: #FFFFFF; /* Teal for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#ribbon a:hover, #ribbon a.active {
+    color: #FFD700; /* Amber for hover and active links */
+}
+
+/* Content Box Styling */
+#box1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
 }
 
 .box {
-
     display: inline-block;
-    margin-left: 200px;
-    align-items: first baseline;
+    margin-left: 50px;
+    align-items: start;
+    max-width: 45%;
 }
-#box1{
-    display: flex;
-    justify-content: space-between;
-}
-#ribbon{
 
+#name {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #FFD700; /* Amber for emphasis */
 }
-#list{
-    list-style-type: none;
+
+/* Work Experience Section */
+.work-experience {
+    margin-top: 30px;
+}
+
+.experience-item {
+    background-color: #444; /* Dark gray for cards */
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #FFFFFF; /* Teal for headings */
+}
+
+.company {
+    font-weight: bold;
+    color: #f0f0f0; /* Light text */
+}
+
+.duration {
+    font-style: italic;
+    color: #A0A0A0; /* Gray for duration text */
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #CCCCCC; /* Light gray for description text */
+    line-height: 1.6;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #box1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .box {
+        margin-left: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #main_image {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ribbon-list {
+        margin: 10px 0;
+    }
+}
+
+/* About Page Styles */
+.about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #CCCCCC; /* Light gray text */
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+/* Contact Page Styles */
+.contact-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #CCCCCC; /* Light gray for contact text */
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+/* Form Styles */
+.contact-form {
     display: flex;
-    justify-content: right;
-    
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
 }
-#ribbon a {
-    color: #d1bd05;
-    text-decoration: none; 
-    margin-right: 50px;
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #FFBA49; /* Amber for labels */
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444; /* Dark gray for input fields */
+    color: #FFFFFF; /* Text color in inputs */
+    outline: none;
+    font-size: 1rem;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #888888; /* Placeholder color */
+}
+
+button.submit-btn {
+    background-color: #FFBA49; /* Amber for button */
+    color: #212121; /* Dark background color for button text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.submit-btn:hover {
+    background-color: #FFD700; /* Bright gold on hover */
+}
+.projects{
+    padding-top: 50px;
+    
 }
